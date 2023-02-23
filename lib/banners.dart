@@ -12,6 +12,7 @@ class _BannersState extends State<Banners> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(48),
+      // margin to inset everything
       child: Column(
         children: [
           Container(
@@ -19,10 +20,13 @@ class _BannersState extends State<Banners> {
             color: Colors.teal,
             height: 100,
             child: Row(
+              // Row which contains the banner content
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // Image
                 Image.network(
                     "https://miro.medium.com/max/1000/1*ilC2Aqp5sZd1wi0CopD1Hw.png"),
+                // Text
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
